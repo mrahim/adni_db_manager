@@ -97,10 +97,10 @@ for gr in groups:
              output_file=p_path,
              black_bg=True, title='/'.join(gr))
                   
-    tmap.to_filename(t_path+'.nii')
+    tmap.to_filename(t_path+'.nii.gz')
     header = pmap.get_header()
     header['aux_file'] = 'hot'
-    pmap.to_filename(p_path+'.nii')
+    pmap.to_filename(p_path+'.nii.gz')
     
                   
     t_path = os.path.join('figures',
@@ -115,13 +115,13 @@ for gr in groups:
                   black_bg=True, title='/'.join(gr))
     """
     
-    plot_img(pmap, bg_img=MNI_TEMPLATE, threshold=10,
+    plot_img(pmap, bg_img=MNI_TEMPLATE, threshold='auto',
              colorbar=True, cmap=cm.hot, vmin=0,
              output_file=p_path,
              black_bg=True, title='/'.join(gr))
                       
 
-    tscore.to_filename(t_path+'.nii')
+    tscore.to_filename(t_path+'.nii.gz')
     header = pscore.get_header()
     header['aux_file'] = 'Hot'
-    pscore.to_filename(p_path+'.nii')
+    pscore.to_filename(p_path+'.nii.gz')

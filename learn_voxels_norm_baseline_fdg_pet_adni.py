@@ -14,45 +14,47 @@ from sklearn import svm
 from sklearn import cross_validation
 from sklearn.metrics import roc_curve, auc
 from nilearn.input_data import NiftiMasker
-from joblib import delayed, Parallel
+from collections import OrderedDict
 
 
-def shuffle_train_and_test(train, test):
-        Xtrain, Xtest = x[train], x[test]
-        Ytrain, Ytest = y[train], y[test]
-        estim.fit(Xtrain,Ytrain)
-        print pg_counter, counter
-        score[counter, pg_counter] = estim.score(Xtest, Ytest)
 
 def plot_shufflesplit(score, pairwise_groups):
     """Boxplot of the accuracies
     """
-    plt.boxplot(score, labels=['/'.join(pg) for pg in pairwise_groups])
+    bp = plt.boxplot(score, labels=['/'.join(pg) for pg in pairwise_groups])
+    for key in bp.keys():
+        for box in bp[key]:
+            box.set(linewidth=2)
+    plt.grid(axis='y')
+    plt.xticks([1, 1.9, 2.8, 3.8, 5, 6.3])
     plt.ylabel('Accuracy')
     plt.title('ADNI baseline accuracies (voxels)')
     plt.legend(loc="lower right")
-    fname = 'boxplot_adni_baseline_voxels_norm'
-    plt.savefig(os.path.join('figures', fname))
-    
+    for ext in ['png', 'pdf', 'svg']:
+        fname = '.'.join(['boxplot_adni_baseline_voxels_norm', ext])
+        plt.savefig(os.path.join('figures', fname))
+
 
 def plot_roc(cv_dict):
     """Plot roc curves for each pairwise groupe
     """
-
     for pg in cv_dict.keys():
         plt.plot(crossval[pg]['fpr'],crossval[pg]['tpr'],
+                 linewidth=2,
                  label='{0} (auc = {1:0.2f})'
                                    ''.format(pg, crossval[pg]['auc']))
         plt.plot([0, 1], [0, 1], 'k--')
         plt.xlim([0.0, 1.0])
         plt.ylim([0.0, 1.05])
+        plt.grid(True)
         plt.xlabel('False Positive Rate')
         plt.ylabel('True Positive Rate')
         plt.title('ADNI baseline ROC curves (voxels)')
         plt.legend(loc="lower right")
-
-    fname = 'roc_adni_baseline_voxels_norm'
-    plt.savefig(os.path.join('figures', fname))
+    
+    for ext in ['png', 'pdf', 'svg']:
+        fname = '.'.join(['roc_adni_baseline_voxels_norm', ext])
+        plt.savefig(os.path.join('figures', fname))
 
 
 
@@ -81,12 +83,12 @@ else:
     np.save('features/features_voxels_norm', X)
 
 
-#AD/MCI, AD/Normal, MCI/LMCI, MCI/Normal
+# Pairwise group comparison
 pairwise_groups = [['AD', 'Normal'], ['AD', 'EMCI'], ['AD', 'LMCI'],
-                   ['EMCI', 'LMCI'], ['EMCI', 'Normal'], ['LMCI', 'Normal']]
-nb_iter = 10
+                   ['LMCI', 'Normal'], ['LMCI', 'EMCI'], ['EMCI', 'Normal']]
+nb_iter = 100
 score = np.zeros((nb_iter, len(pairwise_groups)))
-crossval = dict()
+crossval = OrderedDict() 
 pg_counter = 0
 for pg in pairwise_groups:
     gr1_idx = data[data.DX_Group == pg[0]].index.values
@@ -99,10 +101,6 @@ for pg in pairwise_groups:
     sss = cross_validation.StratifiedShuffleSplit(y, n_iter=nb_iter, test_size=0.2)
     # 1000 runs with randoms 80% / 20% : StratifiedShuffleSplit
     counter = 0
-    
-    Parallel(n_jobs=6)(delayed(shuffle_train_and_test)((train, test))  for train, test in sss)
-
-    """
     for train, test in sss:
         Xtrain, Xtest = x[train], x[test]
         Ytrain, Ytest = y[train], y[test]
@@ -110,7 +108,6 @@ for pg in pairwise_groups:
         print pg_counter, counter
         score[counter, pg_counter] = estim.score(Xtest, Ytest)
         counter += 1
-    """
 
     # Cross-validation
     kf = cross_validation.StratifiedKFold(y,4)
