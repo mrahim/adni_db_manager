@@ -17,8 +17,26 @@ from sklearn import svm
 from sklearn import cross_validation
 from sklearn.metrics import roc_curve, auc
 
-
 def plot_shufflesplit(score, pairwise_groups, N_CLUSTERS):
+    bp = plt.boxplot(score, 0, '', 0)
+    for key in bp.keys():
+        for box in bp[key]:
+            box.set(linewidth=2)
+    plt.grid(axis='x')
+    plt.xlim([.4, 1.])
+    plt.xlabel('Accuracy (%)', fontsize=18)
+    plt.title('Shuffle Split Accuracies '+ str(N_CLUSTERS) +' clusters',
+              fontsize=17)
+    plt.yticks(range(1,7), ['AD/Normal', 'AD/EMCI', 'AD/LMCI', 'LMCI/Normal', 'LMCI/EMCI', 'EMCI/Normal'], fontsize=18)
+    plt.xticks(np.linspace(0.4,1.0,7), np.arange(40,110,10), fontsize=18)
+    plt.tight_layout()
+    for ext in ['png', 'pdf', 'svg']:
+        fname = '.'.join(['boxplot_adni_baseline_'+str(N_CLUSTERS)+'_clusters',
+                          ext])
+        plt.savefig(os.path.join('figures', fname), transparent=True)
+        
+        
+def plot_shufflesplit_vert(score, pairwise_groups, N_CLUSTERS):
     """Boxplot of the accuracies
     """
     bp = plt.boxplot(score, labels=['/'.join(pg) for pg in pairwise_groups])
@@ -37,7 +55,6 @@ def plot_shufflesplit(score, pairwise_groups, N_CLUSTERS):
         
         
         
-
 def plot_roc(cv_dict, N_CLUSTERS):
     """Plot roc curves for each pairwise groupe
     """
@@ -50,18 +67,20 @@ def plot_roc(cv_dict, N_CLUSTERS):
         plt.plot([0, 1], [0, 1], 'k--')
         plt.xlim([0.0, 1.0])
         plt.ylim([0.0, 1.05])
+        plt.xticks(fontsize=18)
+        plt.yticks(fontsize=18)
         plt.grid(True)
-        plt.xlabel('False Positive Rate')
-        plt.ylabel('True Positive Rate')
-        plt.title('ADNI baseline ROC curves ('+str(N_CLUSTERS)+' clusters)')
+        plt.xlabel('False Positive Rate', fontsize=18)
+        plt.ylabel('True Positive Rate', fontsize=18)
+        plt.title('K-Fold ROC curves ' + str(N_CLUSTERS) + ' clusters',
+                  fontsize=18)
         plt.legend(loc="lower right")
+        plt.tight_layout()
     
     for ext in ['png', 'pdf', 'svg']:
         fname = '.'.join(['roc_adni_baseline_'+str(N_CLUSTERS)+'_clusters',
                           ext])
-        plt.savefig(os.path.join('figures', fname))
-
-
+        plt.savefig(os.path.join('figures', fname), transparent=True)
 
 # 1- Ward (define nb_clusters)
 # 2- mean intesnity cluster for each subject
@@ -70,31 +89,14 @@ def plot_roc(cv_dict, N_CLUSTERS):
 ###############################################################################
 
 
-N_CLUSTERS_SET = [1000, 2000]
+N_CLUSTERS_SET = [83]
 
-BASE_DIR = '/Volumes/CORSAIR/data/ADNI/ADNI_baseline_fdg_pet'
-#BASE_DIR = '/disk4t/mehdi/data/pet_fdg_baseline_processed_ADNI'
+#BASE_DIR = '/Volumes/CORSAIR/data/ADNI/ADNI_baseline_fdg_pet'
+BASE_DIR = '/disk4t/mehdi/data/ADNI_baseline_fdg_pet'
 
 MNI_TEMPLATE = os.path.join(BASE_DIR, 'wMNI152_T1_2mm_brain.nii')
 
 data = pd.read_csv(os.path.join(BASE_DIR, 'description_file.csv'))
-
-pet_files = []
-pet_img = []
-for idx, row in data.iterrows():
-    pet_file = glob.glob(os.path.join(BASE_DIR,
-                                      'I' + str(row.Image_ID), 'wI*.nii'))
-    if len(pet_file) > 0:
-        pet_files.append(pet_file[0])
-        img = nib.load(pet_file[0])
-        pet_img.append(img)
-
-masker = NiftiMasker(mask_strategy='epi',
-                     mask_args=dict(opening=1))
-masker.fit(pet_files)
-
-pet_data_masked = masker.transform_niimgs(pet_files, n_jobs=4)
-pet_data_masked = np.vstack(pet_data_masked)
 
 """
 Test various n_clusters
@@ -102,9 +104,27 @@ Test various n_clusters
 for N_CLUSTERS in N_CLUSTERS_SET:
 
     features_file = 'features_' + str(N_CLUSTERS) + '_clusters.npy'
-    if os.path.exists(features_file):
-        X = np.load(features_file)
+    if os.path.exists(os.path.join('features', features_file)):
+        X = np.load(os.path.join('features', features_file))
     else:
+        
+        pet_files = []
+        pet_img = []
+        for idx, row in data.iterrows():
+            pet_file = glob.glob(os.path.join(BASE_DIR,
+                                              'I' + str(row.Image_ID), 'wI*.nii'))
+            if len(pet_file) > 0:
+                pet_files.append(pet_file[0])
+                img = nib.load(pet_file[0])
+                pet_img.append(img)
+        
+        masker = NiftiMasker(mask_strategy='epi',
+                             mask_args=dict(opening=1))
+        masker.fit(pet_files)
+        
+        pet_data_masked = masker.transform_niimgs(pet_files, n_jobs=4)
+        pet_data_masked = np.vstack(pet_data_masked)
+
         ##############################################################################
         # Ward
         ##############################################################################

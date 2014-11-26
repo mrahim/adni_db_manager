@@ -25,7 +25,7 @@ from scipy import stats
 ###############################################################################
 
 
-N_CLUSTERS_SET = [100, 200, 500, 1000, 2000]
+N_CLUSTERS_SET = [83]
 
 BASE_DIR = '/disk4t/mehdi/data/ADNI_baseline_fdg_pet'
 
@@ -71,6 +71,10 @@ for N_CLUSTERS in N_CLUSTERS_SET:
     ward.fit(pet_data_masked)
     ward_labels_unique = np.unique(ward.labels_)
     ward_labels = ward.labels_
+        
+    ward_filename = '_'.join(['ward', str(N_CLUSTERS)])
+    img_ward = masker.inverse_transform(ward.labels_)
+    img_ward.to_filename(os.path.join('figures', 'nii', ward_filename))
     
     ##############################################################################
     # Generate cluster matrix

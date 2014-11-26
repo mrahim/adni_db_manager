@@ -1,24 +1,38 @@
+# -*- coding: utf-8 -*-
 """
-A script that :
-- computes a Masker from FDG PET (baseline uniform)
-- cross-validates a linear SVM classifier
-- computes a ROC curve and AUC
+Classification at region level of pairwise DX Groups.
+@author: Mehdi
 """
 
 import os, glob
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import nibabel as nib
 from sklearn import svm
 from sklearn import cross_validation
 from sklearn.metrics import roc_curve, auc
-from nilearn.input_data import NiftiMasker
-from collections import OrderedDict
-
 
 
 def plot_shufflesplit(score, pairwise_groups):
+    bp = plt.boxplot(score, 0, '', 0)
+    for key in bp.keys():
+        for box in bp[key]:
+            box.set(linewidth=2)
+    plt.grid(axis='x')
+    plt.xlim([.4, 1.])
+    plt.xlabel('Accuracy (%)', fontsize=18)
+    plt.title('Shuffle Split Accuracies (regions)', fontsize=18)
+    plt.yticks(range(1,7), ['AD/Normal', 'AD/EMCI', 'AD/LMCI', 'LMCI/Normal', 'LMCI/EMCI', 'EMCI/Normal'], fontsize=18)
+    plt.xticks(np.linspace(0.4,1.0,7), np.arange(40,110,10), fontsize=18)
+    plt.tight_layout()
+    for ext in ['png', 'pdf', 'svg']:
+        fname = '.'.join(['boxplot_adni_baseline_regions', ext])
+        plt.savefig(os.path.join('figures', fname), transparent=True)
+
+
+
+def plot_shufflesplit_vert(score, pairwise_groups):
     """Boxplot of the accuracies
     """
     bp = plt.boxplot(score, labels=['/'.join(pg) for pg in pairwise_groups])
@@ -29,17 +43,19 @@ def plot_shufflesplit(score, pairwise_groups):
     plt.xticks([1, 1.9, 2.8, 3.8, 5, 6.3])
     plt.ylabel('Accuracy')
     plt.ylim([0.4, 1.0])
-    plt.title('ADNI baseline accuracies (voxels)')
+    plt.title('ADNI baseline accuracies (regions)')
     plt.legend(loc="lower right")
     for ext in ['png', 'pdf', 'svg']:
-        fname = '.'.join(['boxplot_adni_baseline_voxels_norm', ext])
+        fname = '.'.join(['boxplot_adni_baseline_regions', ext])
         plt.savefig(os.path.join('figures', fname), transparent=True)
+        
 
 
 def plot_roc(cv_dict):
     """Plot roc curves for each pairwise groupe
     """
-    for pg in cv_dict.keys():
+   
+    for pg in ['AD/Normal', 'AD/EMCI', 'AD/LMCI', 'LMCI/Normal', 'LMCI/EMCI', 'EMCI/Normal']:
         plt.plot(crossval[pg]['fpr'],crossval[pg]['tpr'],
                  linewidth=2,
                  label='{0} (auc = {1:0.2f})'
@@ -47,59 +63,76 @@ def plot_roc(cv_dict):
         plt.plot([0, 1], [0, 1], 'k--')
         plt.xlim([0.0, 1.0])
         plt.ylim([0.0, 1.05])
+        plt.xticks(fontsize=18)
+        plt.yticks(fontsize=18)
         plt.grid(True)
-        plt.xlabel('False Positive Rate')
-        plt.ylabel('True Positive Rate')
-        plt.title('ADNI baseline ROC curves (voxels)')
+        plt.xlabel('False Positive Rate', fontsize=18)
+        plt.ylabel('True Positive Rate', fontsize=18)
+        plt.title('K-Fold ROC curves (regions)', fontsize=18)
         plt.legend(loc="lower right")
+        plt.tight_layout()
     
     for ext in ['png', 'pdf', 'svg']:
-        fname = '.'.join(['roc_adni_baseline_voxels_norm', ext])
+        fname = '.'.join(['roc_adni_baseline_regions', ext])
         plt.savefig(os.path.join('figures', fname), transparent=True)
 
 
 
+
 BASE_DIR = '/disk4t/mehdi/data/ADNI_baseline_fdg_pet'
+
+MNI_TEMPLATE = os.path.join(BASE_DIR, 'wMNI152_T1_2mm_brain.nii')
+SEG_TEMPLATE = os.path.join(BASE_DIR, 'wSegmentation.nii')
+N_REGIONS = 83
+
 data = pd.read_csv(os.path.join(BASE_DIR, 'description_file.csv'))
+seg_img = nib.load(SEG_TEMPLATE)
+seg_data = seg_img.get_data()
 
-
-if os.path.exists('features/features_voxels_norm.npy'):
-    X = np.load('features/features_voxels_norm.npy')
+if os.path.exists('features/features_regions.npy'):
+    X = np.load('features/features_regions.npy')
 else:
-    pet_files = []
-    pet_img = []
+    X = np.zeros((len(data), N_REGIONS))
     for idx, row in data.iterrows():
         pet_file = glob.glob(os.path.join(BASE_DIR,
                                           'I' + str(row.Image_ID), 'wI*.nii'))
-        if len(pet_file) > 0:
-            pet_files.append(pet_file[0])
-            img = nib.load(pet_file[0])
-            pet_img.append(img)
-    
-    masker = NiftiMasker(mask_strategy='epi',
-                         mask_args=dict(opening=1))
-    masker.fit(pet_files)
-    pet_masked = masker.transform_niimgs(pet_files, n_jobs=4)
-    X = np.vstack(pet_masked)
-    np.save('features/features_voxels_norm', X)
+        pet_img = nib.load(pet_file[0])
+        pet_data = pet_img.get_data()
+        for val in np.unique(seg_data):
+            if val > 0:
+                ind = (seg_data == val)
+                X[idx, (val/256)-1] = np.mean(pet_data[ind])
+    np.save('features/features_regions', X)
 
 
+X = np.nan_to_num(X)
+
+##############################################################################
+# Classification
+##############################################################################
 # Pairwise group comparison
 pairwise_groups = [['AD', 'Normal'], ['AD', 'EMCI'], ['AD', 'LMCI'],
                    ['LMCI', 'Normal'], ['LMCI', 'EMCI'], ['EMCI', 'Normal']]
-nb_iter = 10
+nb_iter = 100
 score = np.zeros((nb_iter, len(pairwise_groups)))
-crossval = OrderedDict() 
+crossval = dict()
 pg_counter = 0
-for pg in pairwise_groups:
-    gr1_idx = data[data.DX_Group == pg[0]].index.values
-    gr2_idx = data[data.DX_Group == pg[1]].index.values
+
+for gr in pairwise_groups:
+    gr1_idx = data[data.DX_Group == gr[0]].index.values
+    gr2_idx = data[data.DX_Group == gr[1]].index.values
+    
+    gr1_f = X[gr1_idx, :]
+    gr2_f = X[gr2_idx, :]
+    
     x = X[np.concatenate((gr1_idx, gr2_idx))]
     y = np.ones(len(x))
     y[len(y) - len(gr2_idx):] = 0
 
     estim = svm.SVC(kernel='linear')
-    sss = cross_validation.StratifiedShuffleSplit(y, n_iter=nb_iter, test_size=0.2)
+    sss = cross_validation.StratifiedShuffleSplit(y,
+                                                  n_iter=nb_iter,
+                                                  test_size=0.2)
     # 1000 runs with randoms 80% / 20% : StratifiedShuffleSplit
     counter = 0
     for train, test in sss:
@@ -125,7 +158,7 @@ for pg in pairwise_groups:
     if a<.5:
         fpr, tpr, thresholds = roc_curve(y, yproba[:,0])
         a = auc(fpr,tpr)
-    crossval['/'.join(pg)] = {'fpr' : fpr,
+    crossval['/'.join(gr)] = {'fpr' : fpr,
                               'tpr' : tpr,
                               'thresholds' : thresholds,
                               'yproba' : yproba,
@@ -137,5 +170,3 @@ plot_roc(crossval)
 plt.figure()
 plot_shufflesplit(score, pairwise_groups)
 plt.figure()
-np.save('features/score_voxels_norm', score)
-np.save('features/crossval_voxels_norm', crossval)
