@@ -1,4 +1,6 @@
 Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type,Image_ID
+002_S_0295,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,6/16/2011,6/09/2011,90.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,240519
+002_S_0413,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,6/23/2011,6/17/2011,81.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,241476
 002_S_2010,ADNI GO,F,EMCI,ADNI1 Baseline,7/27/2010,7/14/2010,63.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,187065
 002_S_2043,ADNI GO,F,EMCI,ADNI1 Baseline,9/23/2010,9/15/2010,72.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,193433
 002_S_2073,ADNI GO,F,EMCI,ADNI1 Baseline,10/05/2010,9/29/2010,63.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,194754
@@ -80,6 +82,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 007_S_0344,ADNI 1,M,MCI,ADNI1 Baseline,10/18/2006,4/19/2006,78.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:ADNI CTAC",Processed,26498
 007_S_0414,ADNI 1,F,MCI,ADNI1 Baseline,10/18/2006,6/21/2006,79.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:ADNI CTAC",Processed,26502
 007_S_0698,ADNI 1,M,LMCI,ADNI1 Baseline,10/18/2006,8/28/2006,74.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:ADNI CTAC",Processed,26506
+007_S_1206,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,2/29/2012,2/20/2012,78.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TR:BRAIN 3D:FDG:IR CTAC 10it NF",Processed,287164
 007_S_1339,ADNI 1,F,AD,ADNI1 Baseline,4/03/2007,3/28/2007,79.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:ADNI CTAC",Processed,48055
 007_S_2058,ADNI GO,F,EMCI,ADNI1 Baseline,9/28/2010,9/20/2010,84.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:IR CTAC NF",Processed,193848
 007_S_2106,ADNI GO,M,EMCI,ADNI1 Baseline,10/27/2010,10/19/2010,77.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- TRANSAXIAL:BRAIN 3D:FDG:IR CTAC NF",Processed,199383
@@ -202,6 +205,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 014_S_4577,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,4/27/2012,4/27/2012,84.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,300998
 014_S_4615,ADNI 2,M,AD,ADNI2 Baseline-New Pt,5/01/2012,4/30/2012,86.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,301226
 014_S_4668,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,5/24/2012,5/21/2012,71.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,306201
+016_S_1326,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,6/29/2012,6/26/2012,71.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET 1 (AC) FDG",Processed,313484
 016_S_2007,ADNI GO,F,EMCI,ADNI1 Baseline,7/28/2010,7/16/2010,83.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET-AC 1 Volume (Corrected)  FDG",Processed,187691
 016_S_2031,ADNI GO,M,EMCI,ADNI1 Baseline,10/07/2010,9/16/2010,72.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET-AC 1 Volume (Corrected)  FDG",Processed,195571
 016_S_2284,ADNI GO,M,EMCI,ADNI1 Baseline,3/01/2011,2/28/2011,76.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET-AC Volume (Corrected)  FDG",Processed,221614
@@ -292,6 +296,10 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 022_S_4805,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,9/20/2012,8/23/2012,72.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,335886
 022_S_4922,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,1/24/2013,12/21/2012,76.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,356075
 022_S_5004,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,1/25/2013,1/11/2013,64.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,356251
+023_S_0042,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,4/22/2011,4/14/2011,78.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,228637
+023_S_0058,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,4/29/2011,4/28/2011,75.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,229777
+023_S_0331,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,6/09/2011,5/05/2011,69.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,239548
+023_S_1190,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,4/05/2011,3/23/2011,80.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain fdg  FDG",Processed,226239
 023_S_2068,ADNI GO,M,EMCI,ADNI1 Baseline,10/07/2010,10/05/2010,83.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,195579
 023_S_4020,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,6/29/2011,6/23/2011,66.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,242608
 023_S_4034,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,7/18/2011,7/14/2011,72.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain FDG",Processed,245412
@@ -325,6 +333,9 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 024_S_4905,ADNI 2,F,AD,ADNI2 Baseline-New Pt,9/10/2012,9/07/2012,72.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 min FDG 4i/16s ",Processed,332379
 024_S_5054,ADNI 2,F,AD,ADNI2 Baseline-New Pt,1/08/2013,1/04/2013,74.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 min FDG 4i/16s ",Processed,353857
 024_S_5290,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,9/26/2013,9/24/2013,67.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 min 3D FDG 4i/16s ",Processed,392088
+027_S_0074,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,1/07/2013,12/28/2012,85.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,353367
+027_S_0120,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,3/19/2013,3/01/2013,79.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,363632
+027_S_1045,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,1/14/2013,12/13/2012,88.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,355012
 027_S_2183,ADNI GO,M,EMCI,ADNI1 Baseline,1/28/2011,1/07/2011,83.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,214926
 027_S_2219,ADNI GO,M,EMCI,ADNI1 Baseline,1/03/2011,12/20/2010,74.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,209661
 027_S_2245,ADNI GO,F,EMCI,ADNI1 Baseline,1/31/2011,1/17/2011,57.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,215071
@@ -370,6 +381,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 029_S_5158,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,8/25/2013,8/20/2013,74.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,387240
 029_S_5166,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,7/07/2013,6/26/2013,65.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,379272
 029_S_5219,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/18/2013,8/13/2013,75.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,385859
+031_S_0294,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,4/07/2011,3/25/2011,84.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION-ADNI 4i/16s  FDG",Processed,226594
 031_S_2018,ADNI GO,F,EMCI,ADNI1 Baseline,9/01/2010,7/22/2010,76.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION-ADNI - Iter(Brain M FDG",Processed,191845
 031_S_2022,ADNI GO,M,EMCI,ADNI1 Baseline,9/01/2010,8/05/2010,66.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION-ADNI - Iter(Brain M FDG",Processed,191867
 031_S_2233,ADNI GO,F,EMCI,ADNI1 Baseline,1/25/2011,12/30/2010,55.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION-ADNI - Iter(Brain M FDG",Processed,214013
@@ -389,6 +401,8 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 031_S_4590,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,4/06/2012,3/27/2012,60.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION 4i/16s  FDG",Processed,296371
 031_S_4721,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,6/18/2012,5/22/2012,85.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION 4i/16s  FDG",Processed,310822
 031_S_4947,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,11/15/2012,10/12/2012,74.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- EMISSION 4i/16s  FDG",Processed,346757
+032_S_0479,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,10/11/2011,9/26/2011,78.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,260466
+032_S_0677,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,10/20/2011,9/26/2011,76.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,261902
 032_S_2119,ADNI GO,M,EMCI,ADNI1 Baseline,10/28/2010,10/25/2010,71.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,200238
 032_S_2240,ADNI GO,M,EMCI,ADNI1 Baseline,1/21/2011,1/05/2011,78.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,213630
 032_S_2247,ADNI GO,M,EMCI,ADNI1 Baseline,3/14/2011,2/07/2011,65.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,223761
@@ -401,6 +415,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 032_S_4921,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,10/19/2012,9/28/2012,66.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,341162
 032_S_5263,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,11/03/2013,10/07/2013,75.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,396955
 032_S_5289,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,11/26/2013,11/11/2013,60.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,399555
+033_S_0920,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,10/29/2012,10/05/2012,86.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI ITERATIVE FDG",Processed,342837
 033_S_4176,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,9/19/2011,9/09/2011,84.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI ITERATIVE FDG",Processed,256938
 033_S_4177,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,9/19/2011,9/09/2011,85.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI ITERATIVE FDG",Processed,256946
 033_S_4179,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,9/20/2011,9/12/2011,83.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI ITERATIVE FDG",Processed,257144
@@ -459,6 +474,12 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 036_S_5248,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/13/2013,8/08/2013,74.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 4i/16s ",Processed,385218
 036_S_5271,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/16/2013,8/06/2013,80.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 4i/16s ",Processed,385727
 036_S_5283,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,9/13/2013,9/06/2013,73.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 4i/16s ",Processed,389847
+037_S_0150,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,9/23/2011,9/23/2011,79.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,257867
+037_S_0454,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,2/09/2012,2/07/2012,87.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,283629
+037_S_0467,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,4/29/2011,4/11/2011,86.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,229785
+037_S_0552,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,6/28/2011,6/17/2011,65.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,242039
+037_S_0566,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,10/14/2011,10/07/2011,84.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,260984
+037_S_1078,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,12/08/2011,12/05/2011,75.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,270623
 037_S_4001,ADNI 2,F,AD,ADNI2 Baseline-New Pt,6/29/2011,3/07/2011,88.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,242616
 037_S_4015,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,5/02/2011,4/29/2011,73.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,232197
 037_S_4028,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,6/29/2011,5/23/2011,63.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- fdg 4i/16s  FDG",Processed,242624
@@ -553,6 +574,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 053_S_5272,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,9/16/2013,9/12/2013,70.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,390112
 053_S_5287,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,10/01/2013,9/20/2013,79.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,392863
 053_S_5296,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,12/29/2013,12/19/2013,69.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,403696
+057_S_1269,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,2/14/2013,2/08/2013,79.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,359613
 057_S_2398,ADNI GO,M,EMCI,ADNI1 Baseline,7/28/2011,7/25/2011,71.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,247593
 057_S_4888,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,8/24/2012,8/22/2012,74.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,326242
 057_S_4897,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,8/22/2012,8/21/2012,75.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,325854
@@ -560,6 +582,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 057_S_5199,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,6/27/2013,6/19/2013,67.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,378331
 057_S_5292,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,11/22/2013,11/19/2013,74.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,399234
 057_S_5295,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,12/31/2013,12/18/2013,75.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,403787
+067_S_0257,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,8/03/2011,7/29/2011,83.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,248351
 067_S_2195,ADNI GO,M,EMCI,ADNI1 Baseline,12/15/2010,12/13/2010,68.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,208777
 067_S_2196,ADNI GO,F,EMCI,ADNI1 Baseline,12/06/2010,12/03/2010,68.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_frames_2Di_336_2z_AllPass (AC)",Processed,207562
 067_S_2301,ADNI GO,M,EMCI,ADNI1 Baseline,3/07/2011,3/02/2011,65.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,222691
@@ -577,6 +600,8 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 067_S_5160,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,6/20/2013,6/14/2013,84.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,377454
 067_S_5205,ADNI 2,F,AD,ADNI2 Baseline-New Pt,7/05/2013,7/01/2013,59.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,379228
 067_S_5212,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/17/2013,8/14/2013,78.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG_Dyn_6x5min_2Di_336_2z_AllPass (AC)",Processed,385811
+068_S_0127,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,8/03/2011,7/28/2011,76.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET AC 3D Brain ADNI-GO FDG",Processed,248355
+068_S_0872,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,2/07/2012,2/06/2012,75.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET AC 3D Brain ADNI-GO FDG",Processed,283233
 068_S_2168,ADNI GO,M,EMCI,ADNI1 Baseline,11/24/2010,11/16/2010,71.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET AC 3D Brain ADNI-GO FDG",Processed,206542
 068_S_2171,ADNI GO,F,EMCI,ADNI1 Baseline,1/25/2011,12/06/2010,65.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET AC 3D Brain ADNI-GO FDG",Processed,213970
 068_S_2184,ADNI GO,F,EMCI,ADNI1 Baseline,1/25/2011,12/09/2010,80.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET AC 3D Brain ADNI-GO FDG",Processed,213974
@@ -605,6 +630,8 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 070_S_4793,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,7/24/2012,7/13/2012,85.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FORE-IRFDG6X5MIN3D",Processed,317952
 070_S_4856,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,8/13/2012,8/07/2012,65.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 070_S_4856FDGFORE-ITERATIVE",Processed,323294
 070_S_5040,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,1/17/2013,12/24/2012,76.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FORE-ITERATIVEFDG6X5MIN3D",Processed,355439
+072_S_0315,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,5/10/2011,4/12/2011,76.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI BRAIN FDG 1st 15min",Processed,234392
+072_S_1380,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,5/03/2011,5/02/2011,89.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI BRAIN FDG 2nd 15min",Processed,232381
 072_S_2026,ADNI GO,F,EMCI,ADNI1 Baseline,9/01/2010,8/12/2010,82.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI BRAIN 1 FDG",Processed,191875
 072_S_2027,ADNI GO,F,EMCI,ADNI1 Baseline,9/01/2010,8/26/2010,62.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI BRAIN 2 FDG",Processed,191883
 072_S_2037,ADNI GO,M,EMCI,ADNI1 Baseline,9/01/2010,8/25/2010,76.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI BRAIN 2 FDG",Processed,191887
@@ -719,6 +746,10 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 094_S_4649,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,7/05/2012,6/06/2012,65.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30MIN 3D FDG 4i/16s ",Processed,315216
 094_S_4737,ADNI 2,F,AD,ADNI2 Baseline-New Pt,7/13/2012,7/05/2012,74.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30MIN 3D FDG 4i/16s ",Processed,316173
 094_S_4858,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,11/08/2012,11/01/2012,55.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30MIN 3D FDG 4i/16s ",Processed,345499
+098_S_0160,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,4/21/2011,3/11/2011,80.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,228556
+098_S_0171,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,6/14/2011,4/14/2011,83.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,240034
+098_S_0172,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,4/07/2011,3/16/2011,75.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,226602
+098_S_0269,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,6/29/2011,6/23/2011,72.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,242653
 098_S_2047,ADNI GO,M,EMCI,ADNI1 Baseline,9/16/2010,9/13/2010,77.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,192965
 098_S_2052,ADNI GO,M,EMCI,ADNI1 Baseline,10/05/2010,9/29/2010,73.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,194762
 098_S_2079,ADNI GO,M,EMCI,ADNI1 Baseline,10/14/2010,10/12/2010,65.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,196529
@@ -731,6 +762,9 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 098_S_4215,ADNI 2,M,AD,ADNI2 Baseline-New Pt,10/25/2011,10/21/2011,81.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,262311
 098_S_4275,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,1/16/2012,12/09/2011,73.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,278338
 098_S_4506,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,4/19/2012,3/19/2012,71.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_BRAIN_3D  FDG",Processed,298494
+099_S_0051,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,9/02/2011,8/30/2011,72.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,254414
+099_S_0291,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,4/25/2012,4/20/2012,85.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,300416
+099_S_0352,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,4/13/2011,4/04/2011,82.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,227465
 099_S_2042,ADNI GO,M,EMCI,ADNI1 Baseline,9/03/2010,8/25/2010,69.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,192045
 099_S_2063,ADNI GO,M,EMCI,ADNI1 Baseline,11/23/2010,11/11/2010,68.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,206393
 099_S_2146,ADNI GO,M,EMCI,ADNI1 Baseline,12/02/2010,12/01/2010,66.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,207352
@@ -774,10 +808,16 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 109_S_4499,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,4/05/2012,3/19/2012,84.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 6i/16s ",Processed,295734
 109_S_4531,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,3/27/2012,3/19/2012,73.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 6i/16s ",Processed,293611
 109_S_4594,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,4/24/2012,4/23/2012,62.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30 MIN 3D FDG 6i/16s ",Processed,300314
+114_S_0173,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,3/15/2012,3/02/2012,79.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,290406
+114_S_0378,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,1/25/2012,12/06/2011,74.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,280729
+114_S_0416,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,2/28/2012,2/20/2012,78.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,286929
+114_S_1106,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,2/23/2012,2/08/2012,79.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,286196
+114_S_1118,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,2/28/2012,2/24/2012,87.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,286933
 114_S_4379,ADNI 2,F,AD,ADNI2 Baseline-New Pt,1/25/2012,1/23/2012,88.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,280736
 114_S_4404,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,1/27/2012,1/26/2012,82.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,280989
 114_S_5047,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,1/17/2013,12/21/2012,68.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,355455
 114_S_5234,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,7/30/2013,7/09/2013,78.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,383051
+116_S_0361,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,6/02/2011,5/20/2011,79.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_3D_Brain_ITERATIVE  FDG",Processed,238689
 116_S_4010,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,5/05/2011,4/22/2011,70.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_3D_Brain_ITERATIVE  FDG",Processed,233328
 116_S_4043,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,6/15/2011,6/10/2011,82.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_3D_Brain_ITERATIVE  FDG",Processed,240262
 116_S_4092,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,7/26/2011,7/22/2011,81.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_3D_Brain_ITERATIVE  FDG",Processed,246717
@@ -804,6 +844,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 123_S_4780,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,7/30/2012,7/17/2012,70.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET1 FDG",Processed,319690
 123_S_4806,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,7/24/2012,7/17/2012,56.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET2 FDG",Processed,317956
 123_S_4904,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,11/27/2012,9/24/2012,65.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET2 FDG",Processed,347944
+126_S_1187,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,2/15/2012,2/13/2012,81.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,285083
 126_S_2360,ADNI GO,M,EMCI,ADNI1 Baseline,6/03/2011,5/27/2011,63.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY 3DIR FDG",Processed,238944
 126_S_2405,ADNI GO,F,EMCI,ADNI1 Baseline,10/21/2011,10/20/2011,71.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,262016
 126_S_2407,ADNI GO,F,EMCI,ADNI1 Baseline,12/08/2011,12/01/2011,68.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI GO PRIMARY  FDG",Processed,270627
@@ -849,6 +890,15 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 127_S_5218,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,8/02/2013,7/18/2013,82.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30-60 min dynamic-3D 4i/16s  FDG",Processed,384166
 127_S_5228,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,7/31/2013,7/25/2013,78.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30-60 min dynamic-3D 4i/16s  FDG",Processed,383881
 127_S_5266,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/19/2013,8/16/2013,66.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 30-60 min dynamic-3D 4i/16s  FDG",Processed,385885
+128_S_0135,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,3/12/2012,2/15/2012,88.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,289826
+128_S_0138,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,1/11/2012,11/28/2011,92.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,277265
+128_S_0200,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,6/25/2012,5/30/2012,67.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,312273
+128_S_0225,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,7/09/2012,6/22/2012,88.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,315472
+128_S_0227,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,6/25/2012,5/31/2012,86.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,312277
+128_S_0230,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,1/31/2012,1/20/2012,86.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,281596
+128_S_0272,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,6/26/2012,6/07/2012,76.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,312702
+128_S_0545,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,8/18/2012,8/08/2012,78.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,324535
+128_S_1043,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,1/09/2012,11/16/2011,73.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,276613
 128_S_2002,ADNI GO,M,EMCI,ADNI1 Baseline,9/13/2010,6/23/2010,65.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,192723
 128_S_2003,ADNI GO,F,EMCI,ADNI1 Baseline,9/13/2010,7/28/2010,63.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,192731
 128_S_2011,ADNI GO,F,EMCI,ADNI1 Baseline,9/13/2010,7/29/2010,70.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,192739
@@ -878,6 +928,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 128_S_4842,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,8/22/2012,8/20/2012,73.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,325927
 128_S_5066,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,2/27/2013,2/12/2013,80.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,361509
 128_S_5123,ADNI 2,F,AD,ADNI2 Baseline-New Pt,5/28/2013,5/10/2013,73.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,374207
+129_S_1246,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,7/05/2011,4/27/2011,76.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET WB FDG",Processed,243257
 129_S_2332,ADNI GO,F,EMCI,ADNI1 Baseline,3/31/2011,3/17/2011,70.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s - Iter(Brain Mode FDG",Processed,225629
 129_S_2347,ADNI GO,M,EMCI,ADNI1 Baseline,5/02/2011,4/25/2011,71.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s 4i/16s  FDG",Processed,232201
 129_S_4073,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,7/07/2011,6/29/2011,76.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s 4i/16s  FDG",Processed,243588
@@ -887,6 +938,9 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 129_S_4371,ADNI 2,M,Normal,ADNI2 Baseline-New Pt,12/08/2011,12/06/2011,67.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s 4i/16s  FDG",Processed,270639
 129_S_4396,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,12/15/2011,12/13/2011,78.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s - Iter(Brain Mode FDG",Processed,272175
 129_S_4422,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,1/06/2012,12/27/2011,70.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <-  3D 6x300s 4i/16s  FDG",Processed,275742
+130_S_0505,ADNI 2,M,LMCI,ADNI2 Initial Visit-Cont Pt,1/28/2013,1/23/2013,86.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI FDG Brain_30min dyn",Processed,356574
+130_S_0886,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,11/15/2011,10/26/2011,76.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI DYN BRAIN_F18FDG (AC)",Processed,266579
+130_S_0969,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,1/27/2012,12/09/2011,75.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI FDG Brain_30min dyn",Processed,281116
 130_S_2373,ADNI GO,F,EMCI,ADNI1 Baseline,6/09/2011,5/12/2011,79.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI DYN BRAIN_F18FDG (AC)",Processed,239568
 130_S_2391,ADNI GO,F,EMCI,ADNI1 Baseline,7/11/2011,6/30/2011,71.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI DYN BRAIN_F18FDG (AC)",Processed,244047
 130_S_2403,ADNI GO,F,EMCI,ADNI1 Baseline,10/27/2011,10/26/2011,79.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI DYN BRAIN_F18FDG (AC)",Processed,262720
@@ -940,11 +994,14 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 135_S_5269,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,8/28/2013,8/21/2013,65.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- BRAIN EMISSION 4i/16s  FDG",Processed,387829
 135_S_5273,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,9/20/2013,8/29/2013,90.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- BRAIN EMISSION 4i/16s  FDG",Processed,391298
 135_S_5275,ADNI 2,F,AD,ADNI2 Baseline-New Pt,9/20/2013,9/06/2013,78.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- BRAIN EMISSION 4i/16s  FDG",Processed,391310
+136_S_0107,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,6/10/2011,6/08/2011,66.1,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,239755
+136_S_0186,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,6/02/2011,5/23/2011,85.8,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,238697
 136_S_4189,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,11/16/2011,11/14/2011,73.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,266969
 136_S_4269,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,1/01/2012,12/19/2011,65.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,274774
 136_S_4408,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,5/19/2012,5/02/2012,74.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,305365
 136_S_4433,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,4/27/2012,4/18/2012,77.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,301011
 136_S_4517,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,5/19/2012,5/11/2012,70.7,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI_VUE_POINT_IT FDG 3D",Processed,305373
+137_S_0301,ADNI 2,F,Normal,ADNI2 Initial Visit-Cont Pt,5/07/2011,4/27/2011,78.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG",Processed,233919
 137_S_4211,ADNI 2,F,AD,ADNI2 Baseline-New Pt,10/11/2011,10/04/2011,81.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG",Processed,260659
 137_S_4258,ADNI 2,M,AD,ADNI2 Baseline-New Pt,10/23/2011,10/17/2011,76.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG",Processed,262036
 137_S_4299,ADNI 2,F,EMCI,ADNI2 Baseline-New Pt,11/18/2011,11/14/2011,77.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG",Processed,267589
@@ -967,6 +1024,8 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 137_S_4816,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,9/14/2012,9/07/2012,74.5,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG RECON 2",Processed,334338
 137_S_4852,ADNI 2,F,LMCI,ADNI2 Baseline-New Pt,9/17/2012,9/11/2012,64.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2-FDG",Processed,334660
 137_S_4862,ADNI 2,M,SMC,ADNI2 Baseline-New Pt,9/21/2013,9/13/2013,77.6,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI-2 FDG AC",Processed,391495
+141_S_1004,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,2/03/2012,2/01/2012,79.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,282701
+141_S_1052,ADNI 2,F,LMCI,ADNI2 Initial Visit-Cont Pt,2/23/2012,12/30/2011,74.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,286200
 141_S_2210,ADNI GO,F,EMCI,ADNI1 Baseline,4/05/2011,3/25/2011,80.3,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,226103
 141_S_2333,ADNI GO,M,EMCI,ADNI1 Baseline,4/19/2011,4/13/2011,67.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,228233
 141_S_4053,ADNI 2,M,LMCI,ADNI2 Baseline-New Pt,6/24/2011,6/16/2011,75.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,241721
@@ -996,6 +1055,7 @@ Subject_ID,Phase,Sex,DX_Group,Visit,Archive_Date,Study_Date,Age,Description,Type
 153_S_4838,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,1/28/2013,8/27/2012,75.9,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- FDG PET BRAIN 1 (AC)",Processed,356387
 153_S_5261,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,8/25/2013,8/13/2013,78.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- 256X256_4I_24S_6X5 FDG",Processed,387280
 153_S_5267,ADNI 2,F,SMC,ADNI2 Baseline-New Pt,9/25/2013,9/09/2013,66.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- PET Brain_FDG",Processed,391929
+941_S_1202,ADNI 2,M,Normal,ADNI2 Initial Visit-Cont Pt,7/22/2011,6/24/2011,82.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,246337
 941_S_2060,ADNI GO,F,EMCI,ADNI1 Baseline,10/29/2010,10/20/2010,74.2,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,200403
 941_S_4036,ADNI 2,M,EMCI,ADNI2 Baseline-New Pt,9/08/2011,8/24/2011,74.4,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,255192
 941_S_4066,ADNI 2,F,Normal,ADNI2 Baseline-New Pt,9/08/2011,8/24/2011,79.0,"Coreg, Avg, Std Img and Vox Siz, Uniform Resolution <- ADNI Brain PET: Raw FDG",Processed,255200
