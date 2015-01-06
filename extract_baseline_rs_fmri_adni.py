@@ -35,7 +35,6 @@ for image_id in fmri['Image_ID'].values:
             if d == str(sequence_id):
                 image_folder = os.path.join(root, d)
                 break
-    print image_folder
     
     # Copy to a clean directory (nii, xml)
     dst_path = os.path.join(DST_BASE_DIR, 'I' + str(image_id))
