@@ -35,12 +35,16 @@ df = pd.read_csv(mmse_file_path)
 
 subjects = df['PTID'].unique() 
 
-
 all_scores = []
 converters = []
+
+
+### DXCHANGE == ADNI 2, G0
+cpt_adni2 = 0
 for subject_id in subjects:
     dx_change = df[df['PTID'] == subject_id]['DXCHANGE'].values
-    phase = df[df['PTID'] == subject_id]['VISCODE2'].values
+    visit = df[df['PTID'] == subject_id]['VISCODE2'].values
+    phase = df[df['PTID'] == subject_id]['Phase_x'].values
     dx_change = dx_change[~np.isnan(dx_change)]
 
     if len(dx_change) > 0:
@@ -50,20 +54,25 @@ for subject_id in subjects:
             #print subject_id, dx_change, phase
             if (2 in dx_change or 5 in dx_change) and (3 in dx_change): 
                 converters.append(subject_id)
-                print subject_id, dx_change, phase
+                print subject_id, dx_change, visit, phase
+                cpt_adni2 += 1
 
+adni2 = np.array(converters, copy=True)
 
+adni1 = []
+cpt_adni1 = 0
+### DXCURREN == ADNI 1, GO
 for subject_id in subjects:
     dx_curren = df[df['PTID'] == subject_id]['DXCURREN'].values
-    phase = df[df['PTID'] == subject_id]['VISCODE2'].values
+    visit = df[df['PTID'] == subject_id]['VISCODE2'].values
+    phase = df[df['PTID'] == subject_id]['Phase_x'].values
     dx_curren = dx_curren[~np.isnan(dx_curren)]
     if len(dx_curren) > 0:
         if (2 in dx_curren or 5 in dx_curren) and (3 in dx_curren):
-            print subject_id, dx_curren
+            print subject_id, dx_curren, visit, phase
             converters.append(subject_id)
-    
-
-
+            adni1.append(subject_id)
+            cpt_adni1 += 1
 
 """
 for subject_id, idx in zip(dataset['subjects'],
