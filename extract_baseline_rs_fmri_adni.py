@@ -14,7 +14,6 @@ DST_BASE_DIR = os.path.join('/', 'disk4t', 'mehdi',
 
 fmri = pd.read_csv(os.path.join(BASE_DIR, 'fmri_rs_baseline.csv'))
 
-
 for image_id in fmri['Image_ID'].values:
     xml_list = glob.glob(os.path.join(ADNI_DIR, '*I' + str(image_id) + '.xml'))
     
@@ -42,6 +41,5 @@ for image_id in fmri['Image_ID'].values:
         shutil.rmtree(dst_path)
     shutil.copytree(image_folder, dst_path)
     shutil.copy(xml_file, DST_BASE_DIR)
-
 
 fmri.to_csv(os.path.join(DST_BASE_DIR, 'description_file.csv'))

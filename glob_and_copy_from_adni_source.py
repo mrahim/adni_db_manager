@@ -11,7 +11,7 @@ import pandas as pd
 
 
 BASE_DIR = '/disk4t/mehdi/data/ADNI'
-DST_DIR = '/disk4t/mehdi/data/ADNI_fmri_temp'
+DST_DIR = '/disk4t/mehdi/data/ADNI_extracted'
 
 
 
@@ -62,10 +62,10 @@ for subj_dir in subject_dir_list:
             img = os.path.join(seq, os.listdir(seq)[0])
             src = img
             dst = os.path.join(DST_DIR, subject_id, 'pet')
-            # Clean pet dst dir
-            if os.path.isdir(dst):
-                shutil.rmtree(dst)
-            shutil.copytree(src, dst)
+#            # Clean pet dst dir
+#            if os.path.isdir(dst):
+#                shutil.rmtree(dst)
+#            shutil.copytree(src, dst)
 
 
 
@@ -81,4 +81,10 @@ for subj_dir in subject_dir_list:
             print subject_id, 'anat empty'
     else:
         print subject_id, 'anat empty'
+    if os.path.isdir(os.path.join(subj_dir, 'pet')):
+        if len(os.listdir(os.path.join(subj_dir, 'pet'))) == 0:
+            print subject_id, 'pet empty'
+    else:
+        print subject_id, 'pet empty'
+
 
