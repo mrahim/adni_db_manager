@@ -134,15 +134,15 @@ df = pd.DataFrame.from_dict(subj_dict_list)
 df = df[['Subject ID', 'DX Group', 'ACQ_DATE', 'EXAM_DATE', 'FILENAME']]
 
 
-for idx, row in df.iterrows():
-    id_img = get_image_id(row['FILENAME'])
-    dst_dir = os.path.join(tobepreprocessed_dir, id_img)
-    dst_file = os.path.join(dst_dir, row['FILENAME'])
-    src_file = os.path.join(dataset_dir, row['Subject ID'], 'func', row['FILENAME'])
-    if os.path.isfile(src_file):
-        if not os.path.isdir(dst_dir):
-            os.mkdir(dst_dir)
-        shutil.copy(src_file, dst_file)
-        print src_file, dst_dir
-
-
+#for idx, row in df.iterrows():
+#    id_img = get_image_id(row['FILENAME'])
+#    dst_dir = os.path.join(tobepreprocessed_dir, id_img)
+#    dst_file = os.path.join(dst_dir, row['FILENAME'])
+#    src_file = os.path.join(dataset_dir, row['Subject ID'], 'func', row['FILENAME'])
+#    if os.path.isfile(src_file):
+#        if not os.path.isdir(dst_dir):
+#            os.mkdir(dst_dir)
+#        shutil.copy(src_file, dst_file)
+#        print src_file, dst_dir
+#
+#
