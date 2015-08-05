@@ -10,11 +10,8 @@ import pandas as pd
 import numpy as np
 from datetime import date, timedelta
 
-
-
 csv_file = 'Diagnosis/'
 dataset_dir = '/disk4t/mehdi/data/ADNI_extracted/fmri_longitudinal/'
-
 
 roster = pd.read_csv(os.path.join(csv_file, 'ROSTER.csv'))
 dx = pd.read_csv(os.path.join(csv_file, 'DXSUM_PDXCONV_ADNIALL.csv'))
@@ -48,7 +45,6 @@ def get_dx(rid, sid):
     dxchange = np.asarray(dxchange, dtype=int)
     
     return dxchange, exam_date
-
 
 
 def get_acquisition_dates(subj_id):
